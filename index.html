@@ -146,8 +146,9 @@
             font-weight: 800; font-size: 1.5rem; color: var(--color-navy);
         }
         .logo-icon {
-            width: 44px; height: 44px; border-radius: var(--radius-md);
+            width: 40px; height: 40px; border-radius: var(--radius-md);
             overflow: hidden; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
         }
         .logo-icon img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -299,9 +300,10 @@
             box-shadow: var(--shadow-lg); transform: translateY(-4px);
         }
         .benefit-icon {
-            width: 200px; height: 160px; margin: 0 auto 1.25rem;
+            width: 120px; height: 120px; margin: 0 auto 1.25rem;
             border-radius: var(--radius-lg); overflow: hidden;
             display: flex; align-items: center; justify-content: center;
+            background: var(--color-gray-100);
         }
         .benefit-icon img { width: 100%; height: 100%; object-fit: cover; }
         .benefit-title { font-size: 1.125rem; font-weight: 700; color: var(--color-navy); margin-bottom: 0.5rem; }
@@ -475,6 +477,7 @@
         .footer-logo-icon {
             width: 36px; height: 36px; border-radius: var(--radius-md);
             overflow: hidden; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
         }
         .footer-logo-icon img { width: 100%; height: 100%; object-fit: cover; }
         .footer-desc { font-size: 0.9375rem; line-height: 1.7; color: var(--color-gray-400); }
@@ -751,6 +754,7 @@
                     <p class="benefit-desc">После каждого занятия вы получаете задания для закрепления пройденного материала.</p>
                 </div>
 
+                <div class="benefit-card reveal">
                     <div class="benefit-icon"><img src="images/meet.jpg" alt="Обратная связь" loading="lazy"></div>
                     <h3 class="benefit-title">Обратная связь</h3>
                     <p class="benefit-desc">Регулярная обратная связь по вашему прогрессу и рекомендации по улучшению.</p>
@@ -1095,7 +1099,7 @@
                     </div>
                 </div>
 
-                <div class="faq-item reveal">
+                <div class=""faq-item reveal">
                     <div class="faq-question">
                         <span>Можно ли перенести занятие?</span>
                         <div class="faq-icon">&#9660;</div>
@@ -1114,7 +1118,7 @@
                     </div>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            Принимаю оплату банковской картой, через PayPal, Wise, а также криптовалютой. Все детали обсуждаются индивидуально.
+                            Принимаю оплату банковской картой, через СБП. 
                         </div>
                     </div>
                 </div>
