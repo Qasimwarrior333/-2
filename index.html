@@ -1,26 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluentica — Онлайн-занятия по русскому, таджикскому и узбекскому языкам</title>
-    <meta name="description" content="Fluentica — индивидуальные онлайн-занятия по русскому, таджикскому и узбекскому языкам. Сановбар — полиглот с 11-летним опытом. Запишитесь на бесплатную консультацию.">
-    <meta name="keywords" content="русский язык, таджикский язык, узбекский язык, английский язык, репетитор, онлайн занятия, Fluentica, Сановбар">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fluentica — Онлайн-занятия по русскому, таджикскому и узбекскому языкам</title>
+<meta content="Fluentica — индивидуальные онлайн-занятия по русскому, таджикскому и узбекскому языкам. Сановбар — полиглот с 11-летним опытом. Запишитесь на бесплатную консультацию." name="description"/>
+<meta content="русский язык, таджикский язык, узбекский язык, английский язык, репетитор, онлайн занятия, Fluentica, Сановбар" name="keywords"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700;800&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+<style>
         :root {
-            --color-white: #ffffff;
-            --color-navy: #0f172a;
+            --color-white: #FDF5E6;
+            --color-navy: #5D4037;
             --color-navy-light: #1e293b;
-            --color-blue: #3b82f6;
+            --color-blue: #D32F2F;
             --color-blue-light: #60a5fa;
-            --color-blue-dark: #2563eb;
+            --color-blue-dark: #D32F2F;
             --color-gray-50: #f8fafc;
-            --color-gray-100: #f1f5f9;
+            --color-gray-100: #B0C4DE;
             --color-gray-200: #e2e8f0;
             --color-gray-300: #cbd5e1;
             --color-gray-400: #94a3b8;
@@ -28,7 +27,7 @@
             --color-gray-600: #475569;
             --color-gray-700: #334155;
             --color-gray-800: #1e293b;
-            --color-gray-900: #0f172a;
+            --color-gray-900: #5D4037;
             --color-gold: #d4a853;
             --color-gold-light: #e8c87a;
             --color-cream: #faf7f2;
@@ -122,15 +121,14 @@
             transition: all var(--transition-base);
         }
         .btn-telegram:hover { background: #1a8bc4; transform: translateY(-2px); }
-        .btn-whatsapp {
-            background: #25D366; color: white;
+        .btn-vk {
+            background: #0077FF; color: white;
             border: none; border-radius: var(--radius-full);
             padding: 0.75rem 1.5rem; font-weight: 600;
             display: inline-flex; align-items: center; gap: 0.5rem;
             transition: all var(--transition-base);
-        }
-        .btn-whatsapp:hover { background: #1ebe5a; transform: translateY(-2px); }
-
+         }
+         .btn-vk:hover { background: #0066DD; transform: translateY(-2px); }
         .header {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
             background: rgba(255, 255, 255, 0.9);
@@ -146,7 +144,7 @@
             font-weight: 800; font-size: 1.5rem; color: var(--color-navy);
         }
         .logo-icon {
-            width: 28px; height: 28px; border-radius: var(--radius-md);
+            width: 40px; height: 40px; border-radius: var(--radius-md);
             overflow: hidden; display: flex; align-items: center; justify-content: center;
             flex-shrink: 0;
         }
@@ -464,7 +462,7 @@
         .form-submit { width: 100%; }
         .form-message { display: none; padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem; font-size: 0.9375rem; font-weight: 500; text-align: center; }
         .form-message.success { display: block; background: rgba(34, 197, 94, 0.1); color: #16a34a; border: 1px solid rgba(34, 197, 94, 0.2); }
-        .form-message.error { display: block; background: rgba(239, 68, 68, 0.1); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.2); }
+        .form-message.error { display: block; background: rgba(239, 68, 68, 0.1); color: #D32F2F; border: 1px solid rgba(239, 68, 68, 0.2); }
 
         .footer { background: var(--color-navy); color: var(--color-gray-300); padding: 60px 0 30px; }
         .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
@@ -551,746 +549,610 @@
             .about-image-badge { position: static; margin-top: 1rem; box-shadow: var(--shadow-md); }
         }
     </style>
-<base target="_blank">
+<base target="_blank"/>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <div class="logo-icon"><img src="images/book.jpg" alt="Fluentica"></div>
-                <span>Fluentica</span>
-            </a>
-
-            <nav class="nav">
-                <ul class="nav-list" id="navList">
-                    <li><a href="#hero" class="nav-link active">Главная</a></li>
-                    <li><a href="#about" class="nav-link">О преподавателе</a></li>
-                    <li><a href="#languages" class="nav-link">Языки</a></li>
-                    <li><a href="#pricing" class="nav-link">Стоимость</a></li>
-                    <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
-                    <li><a href="#faq" class="nav-link">Вопросы</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
-                    <li><a href="#contact" class="nav-link btn btn-primary btn-sm">Записаться</a></li>
-                </ul>
-
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
-                    <span></span><span></span><span></span>
-                </button>
-            </nav>
-        </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="container hero-inner">
-            <div class="hero-content">
-                <div class="hero-badge animate">
-                    <span>&#10024;</span>
-                    <span>Индивидуальные онлайн-занятия</span>
-                </div>
-
-                <h1 class="hero-title animate delay-1">
-                    <span>Изучайте языки</span><br>
-                    <span>с профессионалом</span>
-                </h1>
-
-                <p class="hero-tagline animate delay-2">Fluentica — ваш путь к изучению языков</p>
-
-                <p class="hero-subtitle animate delay-2">Русский · Таджикский · Английский · Узбекский</p>
-
-                <p class="hero-desc animate delay-2">
+<!-- HEADER -->
+<header class="header" id="header">
+<div class="container header-inner">
+<a class="logo" href="#">
+<div class="logo-icon"><img alt="Fluentica" src="images/book.jpg"/></div>
+<span>Fluentica</span>
+</a>
+<nav class="nav">
+<ul class="nav-list" id="navList">
+<li><a class="nav-link active" href="#hero">Главная</a></li>
+<li><a class="nav-link" href="#about">О преподавателе</a></li>
+<li><a class="nav-link" href="#languages">Языки</a></li>
+<li><a class="nav-link" href="#pricing">Стоимость</a></li>
+<li><a class="nav-link" href="#testimonials">Отзывы</a></li>
+<li><a class="nav-link" href="#faq">Вопросы</a></li>
+<li><a class="nav-link" href="#contact">Контакты</a></li>
+<li><a class="nav-link btn btn-primary btn-sm" href="#contact">Записаться</a></li>
+</ul>
+<button aria-label="Меню" class="mobile-menu-btn" id="mobileMenuBtn">
+<span></span><span></span><span></span>
+</button>
+</nav>
+</div>
+</header>
+<!-- HERO -->
+<section class="hero" id="hero">
+<div class="container hero-inner">
+<div class="hero-content">
+<div class="hero-badge animate">
+<span>✨</span>
+<span>Индивидуальные онлайн-занятия</span>
+</div>
+<h1 class="hero-title animate delay-1">
+<span>Изучайте языки</span><br/>
+<span>с профессионалом</span>
+</h1>
+<p class="hero-tagline animate delay-2">Fluentica — ваш путь к изучению языков</p>
+<p class="hero-subtitle animate delay-2">Русский · Таджикский · Английский · Узбекский</p>
+<p class="hero-desc animate delay-2">
                     Индивидуальный подход, современные методики и комфортный темп обучения. Начните говорить на новом языке уже с первых занятий.
                 </p>
-
-                <div class="hero-buttons animate delay-3">
-                    <a href="#contact" class="btn btn-primary">Записаться на Урок</a>
-                    <a href="#about" class="btn btn-secondary">Узнать больше</a>
-                </div>
-
-                <div class="hero-stats animate delay-4">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">25 000+</div>
-                        <div class="hero-stat-label">Проведённых занятий</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">11+</div>
-                        <div class="hero-stat-label">Лет опыта</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">4</div>
-                        <div class="hero-stat-label">Языка</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">5.0</div>
-                        <div class="hero-stat-label">Средний балл</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-image-wrapper animate delay-2">
-                <div class="hero-image-bg"></div>
-                <div class="hero-image">
-                    <img src="images/hero2.jpg" alt="Сановбар — преподаватель языков" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section about" id="about">
-        <div class="container about-inner">
-            <div class="about-image reveal">
-                <img src="images/hero1.jpg" alt="Сановбар — о преподавателе" loading="lazy">
-                <div class="about-image-badge">
-                 
-                    <div class="about-image-badge-text">
-                 
-                    </div>
-                </div>
-            </div>
-
-            <div class="about-content reveal">
-                <h2>О преподавателе</h2>
-
-                <p class="about-text">
+<div class="hero-buttons animate delay-3">
+<a class="btn btn-primary" href="https://vk.me/id640493854">Записаться на Урок</a>
+</div>
+<div class="hero-stats animate delay-4">
+<div class="hero-stat">
+<div class="hero-stat-number">25 000+</div>
+<div class="hero-stat-label">Проведённых занятий</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-number">11+</div>
+<div class="hero-stat-label">Лет опыта</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-number">4</div>
+<div class="hero-stat-label">Языка</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-number">5.0</div>
+<div class="hero-stat-label">Средний балл</div>
+</div>
+</div>
+</div>
+<div class="hero-image-wrapper animate delay-2">
+<div class="hero-image-bg"></div>
+<div class="hero-image">
+<img alt="Сановбар — преподаватель языков" loading="lazy" src="images/hero2.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="section about" id="about">
+<div class="container about-inner">
+<div class="about-image reveal">
+<img alt="Сановбар — о преподавателе" loading="lazy" src="images/hero1.jpg"/>
+<div class="about-image-badge">
+<div class="about-image-badge-text">
+</div>
+</div>
+</div>
+<div class="about-content reveal">
+<h2>О преподавателе</h2>
+<p class="about-text">
                     Здравствуйте! Меня зовут <strong>Сановбар</strong>. Я — полиглот с высшим лингвистическим образованием и более чем 11-летним опытом преподавания иностранных языков.
                 </p>
-
-                <p class="about-text">
+<p class="about-text">
                     Окончила Московский международный университет по направлению «Лингвистика». Имею международный сертификат <strong>TESOL</strong>, который подтверждает право преподавать английский язык в соответствии с современными международными стандартами. Также прошла программу переподготовки по направлению «Преподавание русского языка как иностранного». В настоящее время обучаюсь в магистратуре по направлению «Консультативная и клиническая психология».
                 </p>
-
-                <p class="about-text">
+<p class="about-text">
                     Свободно владею <strong>русским, таджикским, узбекским и английским</strong> языками. Параллельно осваиваю ещё три языка — арабский, турецкий и французский.
                 </p>
-
-                <p class="about-text">
+<p class="about-text">
                     В своей работе придерживаюсь системного подхода: каждая новая тема логично опирается на ранее изученный материал, а теоретические знания обязательно закрепляются на практике. Мой главный принцип — не просто познакомить ученика с правилами, а помочь постичь внутреннюю логику языка, преодолеть языковой барьер и научиться уверенно использовать знания в реальном общении.
                 </p>
-
-                <div class="about-features">
-                    <div class="about-feature">
-                        <div class="about-feature-icon">&#127919;</div>
-                        <span>Индивидуальный подход</span>
-                    </div>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">&#128187;</div>
-                        <span>Онлайн-занятия</span>
-                    </div>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">&#128218;</div>
-                        <span>Современные материалы</span>
-                    </div>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">&#127758;</div>
-                        <span>Мультиязычность</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LANGUAGES -->
-    <section class="section languages" id="languages">
-        <div class="container">
-            <h2 class="section-title reveal">Какие языки преподаются</h2>
-            <p class="section-subtitle reveal">Выберите язык и начните свой путь к свободному общению</p>
-
-          <div class="languages-grid">
-    <div class="language-card reveal">
-        <div class="language-flag">🇷🇺</div>
-        <h3 class="language-name">Русский язык</h3>
-        <p class="language-desc">От базового уровня до продвинутого. Грамматика, разговорная практика, подготовка к экзаменам.</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Подробнее</a>
-    </div>
-
-    <div class="language-card reveal">
-        <!-- TJ: Таджикский флаг -->
-        <div class="language-flag">🇹🇯</div>
-        <h3 class="language-name">Таджикский язык</h3>
-        <p class="language-desc">Изучение таджикского языка с носителем. Разговорная практика, культура и традиции.</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Подробнее</a>
-    </div>
-
-    <div class="language-card reveal">
-        <!-- UZ: Узбекский флаг -->
-        <div class="language-flag">🇺🇿</div>
-        <h3 class="language-name">Узбекский язык</h3>
-        <p class="language-desc">Узбекский язык для всех уровней. Индивидуальная программа с учётом ваших целей.</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Подробнее</a>
-    </div>
-
-    <div class="language-card reveal">
-        <!-- EN: Английский флаг -->
-        <div class="language-flag">🇬🇧</div>
-        <h3 class="language-name">Английский язык</h3>
-        <p class="language-desc">Английский для любых целей: от повседневного общения до бизнес‑английского и подготовки к экзаменам.</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Подробнее</a>
-    </div>
+<div class="about-features">
+<div class="about-feature">
+<div class="about-feature-icon">🎯</div>
+<span>Индивидуальный подход</span>
 </div>
-
-
-    <!-- BENEFITS -->
-    <section class="section benefits" id="benefits">
-        <div class="container">
-            <h2 class="section-title reveal">Почему стоит выбрать именно меня</h2>
-            <p class="section-subtitle reveal">Ваш успех — моя главная цель</p>
-
-            <div class="benefits-grid">
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/individual-pgm.jpg" alt="Индивидуальная программа" loading="lazy"></div>
-                    <h3 class="benefit-title">Индивидуальная программа</h3>
-                    <p class="benefit-desc">Программа обучения составляется специально под ваши цели, уровень и темп усвоения материала.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/new-system.jpg" alt="Современные материалы" loading="lazy"></div>
-                    <h3 class="benefit-title">Современные материалы</h3>
-                    <p class="benefit-desc">Использую актуальные учебники, интерактивные задания и мультимедийные ресурсы.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/speak.jpg" alt="Разговорная практика" loading="lazy"></div>
-                    <h3 class="benefit-title">Разговорная практика</h3>
-                    <p class="benefit-desc">Большое внимание уделяю разговорной речи — вы начнёте говорить уже с первых занятий.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/dz.jpg" alt="Домашние задания" loading="lazy"></div>
-                    <h3 class="benefit-title">Домашние задания</h3>
-                    <p class="benefit-desc">После каждого занятия вы получаете задания для закрепления пройденного материала.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/meet.jpg" alt="Обратная связь" loading="lazy"></div>
-                    <h3 class="benefit-title">Обратная связь</h3>
-                    <p class="benefit-desc">Регулярная обратная связь по вашему прогрессу и рекомендации по улучшению.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/time.jpg" alt="Удобное расписание" loading="lazy"></div>
-                    <h3 class="benefit-title">Удобное расписание</h3>
-                    <p class="benefit-desc">Занятия в удобное для вас время. Возможность переноса при необходимости.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/online.png" alt="Занятия онлайн" loading="lazy"></div>
-                    <h3 class="benefit-title">Занятия онлайн</h3>
-                    <p class="benefit-desc">Обучайтесь из любой точки мира. Всё, что нужно — интернет и компьютер или смартфон.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/expirience.jpg" alt="Опыт и профессионализм" loading="lazy"></div>
-                    <h3 class="benefit-title">Опыт и профессионализм</h3>
-                    <p class="benefit-desc">Более 11 лет преподавательского опыта и сотни довольных учеников.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon"><img src="images/friends.jpg" alt="Дружелюбная атмосфера" loading="lazy"></div>
-                    <h3 class="benefit-title">Дружелюбная атмосфера</h3>
-                    <p class="benefit-desc">На занятиях комфортно и без стресса. Ошибки — это часть обучения!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- PRICING -->
-    <section class="section pricing" id="pricing">
-        <div class="container">
-            <h2 class="section-title reveal">Стоимость занятий</h2>
-            <p class="section-subtitle reveal">Выберите подходящий формат обучения</p>
-
-            <div class="pricing-grid">
-                <div class="pricing-card reveal">
-                    <div class="pricing-name">Разовое занятие</div>
-                    <div class="pricing-price">2 000 ₽<span>/час</span></div>
-                    <div class="pricing-period">Оплата за каждое занятие</div>
-                    <div class="pricing-features">
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>60 минут занятия</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Индивидуальный подход</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Материалы для занятий</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Домашнее задание</span>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Записаться</a>
-                </div>
-
-                <div class="pricing-card popular reveal">
-                    <div class="pricing-badge">Популярный</div>
-                    <div class="pricing-name">Пакет 8 занятий</div>
-                    <div class="pricing-price">14 400 ₽<span>/пакет</span></div>
-                    <div class="pricing-period">Экономия 1 600 ₽</div>
-                    <div class="pricing-features">
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>60 минут занятия</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Индивидуальный подход</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Материалы для занятий</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Персональный план обучения</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Поддержка между занятиями</span>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-primary">Записаться</a>
-                </div>
-
-                <div class="pricing-card reveal">
-                    <div class="pricing-name">Пакет 12 занятий</div>
-                    <div class="pricing-price">20 000 ₽<span>/пакет</span></div>
-                    <div class="pricing-period">Экономия 4 000 ₽</div>
-                    <div class="pricing-features">
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>60 минут занятия</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Индивидуальный подход</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Материалы для занятий</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Персональный план обучения</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Поддержка между занятиями</span>
-                        </div>
-                        <div class="pricing-feature">
-                            <div class="pricing-feature-check">&#10003;</div>
-                            <span>Запись занятий</span>
-                        </div>
-                    </div>
-                    <a href="#contact" class="btn btn-secondary">Записаться</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title reveal">Отзывы учеников</h2>
-            <p class="section-subtitle reveal">Что говорят мои ученики об обучении</p>
-
-            <div class="testimonials-carousel">
-                <div class="testimonials-track" id="testimonialsTrack">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Занимаюсь русским языком уже 6 месяцев. Результаты превзошли ожидания! Преподаватель очень терпеливый и находит подход к каждому."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">А</div>
-                            <div>
-                                <div class="testimonial-name">Екатерина</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Невероятно крутое занятие!!! К концу занятия уже начали читать и говорить. Очень всё понятно и доступно. И насмеялись от души!"</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">Т</div>
-                            <div>
-                                <div class="testimonial-name">Тамара</div>
-                                <div class="testimonial-lang">Узбекский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Сановбар Давронхоновна — высокий специалист своего дела. Занятие прошло очень продуктивно, доходчивое объяснение материала. Урок структурированный."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">Е</div>
-                            <div>
-                                <div class="testimonial-name">Екатерина</div>
-                                <div class="testimonial-lang">Узбекский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Сановбар очень приятная девушка, располагает с первого урока. Всё объяснила грамотно. Начинаю с 0. Первый урок понравился, прошёл легко."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">В</div>
-                            <div>
-                                <div class="testimonial-name">Виктория</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Сановбар очень грамотный специалист, со своими схемами, с помощью которых можно гораздо легче усваивать иностранный язык. 10/10!"</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">С</div>
-                            <div>
-                                <div class="testimonial-name">SERAFIMA</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Очень легко и понятно заниматься с Сановбар. Очень крутой подход к обучению языку. Начинаешь схватывать с первых минут, и к середине занятия уже строишь предложения!"</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">С</div>
-                            <div>
-                                <div class="testimonial-name">Сергей</div>
-                                <div class="testimonial-lang">Узбекский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Первый урок понравился, Сановбар всё объясняет хорошо и прислушивается ко всем пожеланиям, подстраивает программу под уровень ученика."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">Р</div>
-                            <div>
-                                <div class="testimonial-name">Румана</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Задача у Сановбар сложная — 3 подростка с 0 будут изучать таджикский язык, с первых уроков уже у них есть словарный запас, детям занятия понравились."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">М</div>
-                            <div>
-                                <div class="testimonial-name">Мария</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Отличный специалист! Сразу всё объяснялось на практике, доступно и понятно. Спасибо, буду обращаться снова!"</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">А</div>
-                            <div>
-                                <div class="testimonial-name">Алёна</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Урок прошёл легко, интересно, структурировано, с чувством юмора, а главное — результативно. Спасибо."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">Н</div>
-                            <div>
-                                <div class="testimonial-name">Нигора</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Очень приятно проходит урок. Понравилось, что нет вводной части, время сразу тратится на практику и отработку произношения."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">А</div>
-                            <div>
-                                <div class="testimonial-name">Алла</div>
-                                <div class="testimonial-lang">Таджикский язык</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="testimonial-text">"Очень понравилось занятие. Было интересно, темп очень хороший. С удовольствием продолжу дальше заниматься!"</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">М</div>
-                            <div>
-                                <div class="testimonial-name">Милена</div>
-                                <div class="testimonial-lang">Подготовка к экзаменам · Таджикский</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-nav">
-                    <button class="carousel-btn" id="prevBtn">&#9664;</button>
-                    <button class="carousel-btn" id="nextBtn">&#9654;</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FAQ -->
-    <section class="section faq" id="faq">
-        <div class="container">
-            <h2 class="section-title reveal">Часто задаваемые вопросы</h2>
-            <p class="section-subtitle reveal">Ответы на самые популярные вопросы</p>
-
-            <div class="faq-list">
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Как проходят занятия?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+<div class="about-feature">
+<div class="about-feature-icon">💻</div>
+<span>Онлайн-занятия</span>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">📚</div>
+<span>Современные материалы</span>
+</div>
+<div class="about-feature">
+<div class="about-feature-icon">🌎</div>
+<span>Мультиязычность</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LANGUAGES -->
+<section class="section languages" id="languages">
+<div class="container">
+<h2 class="section-title reveal">Какие языки преподаются</h2>
+<p class="section-subtitle reveal">Выберите язык и начните свой путь к свободному общению</p>
+<div class="languages-grid">
+<div class="language-card reveal">
+<div class="language-flag">🇷🇺</div>
+<h3 class="language-name">Русский язык</h3>
+<p class="language-desc">От базового уровня до продвинутого. Грамматика, разговорная практика, подготовка к экзаменам.</p>
+<a class="btn btn-outline btn-sm" href="#contact">Подробнее</a>
+</div>
+<div class="language-card reveal">
+<!-- TJ: Таджикский флаг -->
+<div class="language-flag">🇹🇯</div>
+<h3 class="language-name">Таджикский язык</h3>
+<p class="language-desc">Изучение таджикского языка с носителем. Разговорная практика, культура и традиции.</p>
+<a class="btn btn-outline btn-sm" href="#contact">Подробнее</a>
+</div>
+<div class="language-card reveal">
+<!-- UZ: Узбекский флаг -->
+<div class="language-flag">🇺🇿</div>
+<h3 class="language-name">Узбекский язык</h3>
+<p class="language-desc">Узбекский язык для всех уровней. Индивидуальная программа с учётом ваших целей.</p>
+<a class="btn btn-outline btn-sm" href="#contact">Подробнее</a>
+</div>
+<div class="language-card reveal">
+<!-- EN: Английский флаг -->
+<div class="language-flag">🇬🇧</div>
+<h3 class="language-name">Английский язык</h3>
+<p class="language-desc">Английский для любых целей: от повседневного общения до бизнес‑английского и подготовки к экзаменам.</p>
+<a class="btn btn-outline btn-sm" href="#contact">Подробнее</a>
+</div>
+</div>
+<!-- BENEFITS -->
+<section class="section benefits" id="benefits">
+<div class="container">
+<h2 class="section-title reveal">Почему стоит выбрать именно меня</h2>
+<p class="section-subtitle reveal">Ваш успех — моя главная цель</p>
+<div class="benefits-grid">
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Индивидуальная программа" loading="lazy" src="images/individual-pgm.jpg"/></div>
+<h3 class="benefit-title">Индивидуальная программа</h3>
+<p class="benefit-desc">Программа обучения составляется специально под ваши цели, уровень и темп усвоения материала.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Современные материалы" loading="lazy" src="images/new-system.jpg"/></div>
+<h3 class="benefit-title">Современные материалы</h3>
+<p class="benefit-desc">Использую актуальные учебники, интерактивные задания и мультимедийные ресурсы.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Разговорная практика" loading="lazy" src="images/speak.jpg"/></div>
+<h3 class="benefit-title">Разговорная практика</h3>
+<p class="benefit-desc">Большое внимание уделяю разговорной речи — вы начнёте говорить уже с первых занятий.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Домашние задания" loading="lazy" src="images/dz.jpg"/></div>
+<h3 class="benefit-title">Домашние задания</h3>
+<p class="benefit-desc">После каждого занятия вы получаете задания для закрепления пройденного материала.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Обратная связь" loading="lazy" src="images/meet.jpg"/></div>
+<h3 class="benefit-title">Обратная связь</h3>
+<p class="benefit-desc">Регулярная обратная связь по вашему прогрессу и рекомендации по улучшению.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Удобное расписание" loading="lazy" src="images/time.jpg"/></div>
+<h3 class="benefit-title">Удобное расписание</h3>
+<p class="benefit-desc">Занятия в удобное для вас время. Возможность переноса при необходимости.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Занятия онлайн" loading="lazy" src="images/online.png"/></div>
+<h3 class="benefit-title">Занятия онлайн</h3>
+<p class="benefit-desc">Обучайтесь из любой точки мира. Всё, что нужно — интернет и компьютер или смартфон.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Опыт и профессионализм" loading="lazy" src="images/expirience.jpg"/></div>
+<h3 class="benefit-title">Опыт и профессионализм</h3>
+<p class="benefit-desc">Более 11 лет преподавательского опыта и сотни довольных учеников.</p>
+</div>
+<div class="benefit-card reveal">
+<div class="benefit-icon"><img alt="Дружелюбная атмосфера" loading="lazy" src="images/friends.jpg"/></div>
+<h3 class="benefit-title">Дружелюбная атмосфера</h3>
+<p class="benefit-desc">На занятиях комфортно и без стресса. Ошибки — это часть обучения!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section class="section pricing" id="pricing">
+<div class="container">
+<h2 class="section-title reveal">Стоимость занятий</h2>
+<p class="section-subtitle reveal">Выберите подходящий формат обучения</p>
+<div class="pricing-grid">
+<div class="pricing-card reveal">
+<div class="pricing-name">Разовое занятие</div>
+<div class="pricing-price">2 000 ₽<span>/час</span></div>
+<div class="pricing-period">Оплата за каждое занятие</div>
+<div class="pricing-features">
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>60 минут занятия</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Индивидуальный подход</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Материалы для занятий</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Домашнее задание</span>
+</div>
+</div>
+<a class="btn btn-secondary" href="#contact">Записаться</a>
+</div>
+<div class="pricing-card popular reveal">
+<div class="pricing-badge">Популярный</div>
+<div class="pricing-name">Пакет 8 занятий</div>
+<div class="pricing-price">14 400 ₽<span>/пакет</span></div>
+<div class="pricing-period">Экономия 1 600 ₽</div>
+<div class="pricing-features">
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>60 минут занятия</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Индивидуальный подход</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Материалы для занятий</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Персональный план обучения</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Поддержка между занятиями</span>
+</div>
+</div>
+<a class="btn btn-primary" href="#contact">Записаться</a>
+</div>
+<div class="pricing-card reveal">
+<div class="pricing-name">Пакет 12 занятий</div>
+<div class="pricing-price">20 000 ₽<span>/пакет</span></div>
+<div class="pricing-period">Экономия 4 000 ₽</div>
+<div class="pricing-features">
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>60 минут занятия</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Индивидуальный подход</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Материалы для занятий</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Персональный план обучения</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Поддержка между занятиями</span>
+</div>
+<div class="pricing-feature">
+<div class="pricing-feature-check">✓</div>
+<span>Запись занятий</span>
+</div>
+</div>
+<a class="btn btn-secondary" href="#contact">Записаться</a>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="section testimonials" id="testimonials">
+<div class="container">
+<h2 class="section-title reveal">Отзывы учеников</h2>
+<p class="section-subtitle reveal">Что говорят мои ученики об обучении</p>
+<div class="testimonials-carousel">
+<div class="testimonials-track" id="testimonialsTrack">
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Занимаюсь русским языком уже 6 месяцев. Результаты превзошли ожидания! Преподаватель очень терпеливый и находит подход к каждому."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">А</div>
+<div>
+<div class="testimonial-name">Екатерина</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Невероятно крутое занятие!!! К концу занятия уже начали читать и говорить. Очень всё понятно и доступно. И насмеялись от души!"</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">Т</div>
+<div>
+<div class="testimonial-name">Тамара</div>
+<div class="testimonial-lang">Узбекский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Сановбар Давронхоновна — высокий специалист своего дела. Занятие прошло очень продуктивно, доходчивое объяснение материала. Урок структурированный."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">Е</div>
+<div>
+<div class="testimonial-name">Екатерина</div>
+<div class="testimonial-lang">Узбекский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Сановбар очень приятная девушка, располагает с первого урока. Всё объяснила грамотно. Начинаю с 0. Первый урок понравился, прошёл легко."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">В</div>
+<div>
+<div class="testimonial-name">Виктория</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Сановбар очень грамотный специалист, со своими схемами, с помощью которых можно гораздо легче усваивать иностранный язык. 10/10!"</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">С</div>
+<div>
+<div class="testimonial-name">SERAFIMA</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Очень легко и понятно заниматься с Сановбар. Очень крутой подход к обучению языку. Начинаешь схватывать с первых минут, и к середине занятия уже строишь предложения!"</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">С</div>
+<div>
+<div class="testimonial-name">Сергей</div>
+<div class="testimonial-lang">Узбекский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Первый урок понравился, Сановбар всё объясняет хорошо и прислушивается ко всем пожеланиям, подстраивает программу под уровень ученика."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">Р</div>
+<div>
+<div class="testimonial-name">Румана</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Задача у Сановбар сложная — 3 подростка с 0 будут изучать таджикский язык, с первых уроков уже у них есть словарный запас, детям занятия понравились."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">М</div>
+<div>
+<div class="testimonial-name">Мария</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Отличный специалист! Сразу всё объяснялось на практике, доступно и понятно. Спасибо, буду обращаться снова!"</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">А</div>
+<div>
+<div class="testimonial-name">Алёна</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Урок прошёл легко, интересно, структурировано, с чувством юмора, а главное — результативно. Спасибо."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">Н</div>
+<div>
+<div class="testimonial-name">Нигора</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Очень приятно проходит урок. Понравилось, что нет вводной части, время сразу тратится на практику и отработку произношения."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">А</div>
+<div>
+<div class="testimonial-name">Алла</div>
+<div class="testimonial-lang">Таджикский язык</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Очень понравилось занятие. Было интересно, темп очень хороший. С удовольствием продолжу дальше заниматься!"</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">М</div>
+<div>
+<div class="testimonial-name">Милена</div>
+<div class="testimonial-lang">Подготовка к экзаменам · Таджикский</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-nav">
+<button class="carousel-btn" id="prevBtn">◀</button>
+<button class="carousel-btn" id="nextBtn">▶</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section faq" id="faq">
+<div class="container">
+<h2 class="section-title reveal">Часто задаваемые вопросы</h2>
+<p class="section-subtitle reveal">Ответы на самые популярные вопросы</p>
+<div class="faq-list">
+<div class="faq-item reveal">
+<div class="faq-question">
+<span>Как проходят занятия?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Занятия проходят онлайн через Zoom, Google Meet или другую удобную для вас платформу. Длительность одного занятия — 60 минут. Перед началом мы обсуждаем ваши цели и составляем индивидуальный план обучения.
                         </div>
-                    </div>
-                </div>
-
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Какой уровень нужен для начала?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-question">
+<span>Какой уровень нужен для начала?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Обучаю учеников любого уровня — от полных новичков до продвинутых. На первом бесплатном занятии мы определяем ваш текущий уровень и цели обучения.
                         </div>
-                    </div>
-                </div>
-
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Как часто нужно заниматься?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-question">
+<span>Как часто нужно заниматься?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Рекомендую заниматься 2-3 раза в неделю для наилучшего результата. Однако расписание всегда обсуждается индивидуально и подстраивается под ваши возможности.
                         </div>
-                    </div>
-                </div>
-
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Какие материалы используются?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-question">
+<span>Какие материалы используются?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Использую современные учебники, адаптированные под онлайн-формат, а также собственные разработки, видео, аудиоматериалы и интерактивные упражнения. Все материалы предоставляются бесплатно.
                         </div>
-                    </div>
-                </div>
-
-                <div class=""faq-item reveal">
-                    <div class="faq-question">
-                        <span>Можно ли перенести занятие?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+</div>
+</div>
+<div class="" faq-item="" reveal"="">
+<div class="faq-question">
+<span>Можно ли перенести занятие?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Да, занятие можно перенести при предупреждении минимум за 24 часа. Я понимаю, что планы могут меняться, и всегда иду навстречу ученикам.
                         </div>
-                    </div>
-                </div>
-
-                <div class="faq-item reveal">
-                    <div class="faq-question">
-                        <span>Какие способы оплаты принимаются?</span>
-                        <div class="faq-icon">&#9660;</div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
+</div>
+</div>
+<div class="faq-item reveal">
+<div class="faq-question">
+<span>Какие способы оплаты принимаются?</span>
+<div class="faq-icon">▼</div>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
                             Принимаю оплату банковской картой, через СБП. 
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT / FORM -->
-    <section class="section contact" id="contact">
-        <div class="container contact-inner">
-            <div class="contact-info reveal">
-                <h2>Запишитесь на занятие</h2>
-                <p>Оставьте заявку, и я свяжусь с вами в ближайшее время для обсуждения деталей.</p>
-
-                <div class="contact-methods">
-                    <a href="https://t.me/fluentica_sanobar" target="_blank" class="contact-method">
-                        <div class="contact-method-icon">&#9992;</div>
-                        <div class="contact-method-info">
-                            <div class="contact-method-label">Telegram</div>
-                            <div class="contact-method-value">@fluentica_sanobar</div>
-                        </div>
-                    </a>
-
-                    <a href="https://wa.me/79123456789" target="_blank" class="contact-method">
-                        <div class="contact-method-icon">&#128172;</div>
-                        <div class="contact-method-info">
-                            <div class="contact-method-label">WhatsApp</div>
-                            <div class="contact-method-value">+7 912 345 67 89</div>
-                        </div>
-                    </a>
-
-                    <a href="mailto:fluentica.sanobar@gmail.com" class="contact-method">
-                        <div class="contact-method-icon">&#128231;</div>
-                        <div class="contact-method-info">
-                            <div class="contact-method-label">Email</div>
-                            <div class="contact-method-value">fluentica.sanobar@gmail.com</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="contact-buttons">
-                    <a href="https://t.me/fluentica_sanobar" target="_blank" class="btn-telegram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT / FORM -->
+<section class="section contact" id="contact">
+<div class="container contact-inner">
+<div class="contact-info reveal">
+<h2>Запишитесь на занятие</h2>
+<p>Оставьте заявку, и я свяжусь с вами в ближайшее время для обсуждения деталей.</p>
+<a class="contact-method" href="mailto:fluentica.soniabfl@mail.ru">
+<div class="contact-method-icon">📧</div>
+<div class="contact-method-info">
+<div class="contact-method-label">Email</div>
+<div class="contact-method-value">fluentica.soniabfl@mail.ru</div>
+</div>
+</a>
+</div>
+<div class="contact-buttons">
+<a class="btn-telegram" href="https://t.me/soniabfl" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg>
                         Написать в Telegram
                     </a>
-                    <a href="https://wa.me/79123456789" target="_blank" class="btn-whatsapp">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Написать в WhatsApp
-                    </a>
-                </div>
-            </div>
+<a class="btn-vk" href="https://vk.me/id640493854" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20">
+<path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.19 1.365 1.26 2.18 1.817.616.422 1.084.33 1.084.33l2.177-.03s1.14-.071.599-.97c-.044-.073-.314-.66-1.617-1.867-1.364-1.261-1.182-1.057.462-3.236.999-1.332 1.398-2.146 1.273-2.494-.12-.332-.858-.244-.858-.244l-2.45.015s-.182-.025-.316.056c-.132.08-.217.265-.217.265s-.39 1.037-.91 1.92c-1.096 1.86-1.534 1.96-1.714 1.842-.418-.27-.314-1.085-.314-1.663 0-1.808.274-2.562-.534-2.758-.268-.065-.465-.108-1.15-.115-.878-.01-1.622.003-2.043.209-.28.138-.496.446-.364.463.163.022.532.1.728.363.253.34.244 1.103.244 1.103s.145 2.13-.34 2.394c-.332.182-.788-.19-1.765-1.893-.501-.87-.88-1.83-.88-1.83s-.073-.18-.204-.276c-.158-.118-.378-.155-.378-.155l-2.33.015s-.35.01-.478.162c-.115.137-.009.42-.009.42s1.834 4.292 3.91 6.456c1.903 1.986 4.064 1.85 4.064 1.85h.978z"></path>
+</svg>
+    Написать в VK
+   </a>
+</div>
+</div>
 
-            <div class="contact-form-wrapper reveal">
-                <h3>Форма записи</h3>
-
-                <form id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Имя</label>
-                        <input type="text" id="name" name="name" class="form-input" required placeholder="Ваше имя">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+7 900 000 00 00">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="email">Электронная почта</label>
-                        <input type="email" id="email" name="email" class="form-input" required placeholder="email@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="language">Какой язык хотите изучать</label>
-                        <select id="language" name="language" class="form-select" required>
-                            <option value="">Выберите язык</option>
-                            <option value="russian">Русский язык</option>
-                            <option value="tajik">Таджикский язык</option>
-                            <option value="uzbek">Узбекский язык</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="comment">Комментарий</label>
-                        <textarea id="comment" name="comment" class="form-textarea" placeholder="Расскажите о ваших целях и текущем уровне..."></textarea>
-                    </div>
-
-                    <div class="form-checkbox-wrapper">
-                        <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required>
-                        <label for="privacy" class="form-checkbox-label">
-                            Я согласен(на) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку персональных данных.
-                        </label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary form-submit">Отправить заявку</button>
-
-                    <div class="form-message" id="formMessage"></div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="footer-logo-icon"><img src="images/book.jpg" alt="Fluentica"></div>
-                        <span>Fluentica</span>
-                    </div>
-                    <p class="footer-desc">
+</section></div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<div class="footer-logo">
+<div class="footer-logo-icon"><img alt="Fluentica" src="images/book.jpg"/></div>
+<span>Fluentica</span>
+</div>
+<p class="footer-desc">
                         Профессиональное обучение русскому, таджикскому, узбекскому и английскому языкам онлайн. Индивидуальный подход к каждому ученику.
                     </p>
-                    <div class="footer-socials">
-                        <a href="https://t.me/fluentica_sanobar" target="_blank" class="footer-social" aria-label="Telegram">&#9992;</a>
-                        <a href="https://wa.me/79123456789" target="_blank" class="footer-social" aria-label="WhatsApp">&#128172;</a>
-                        <a href="#" class="footer-social" aria-label="Instagram">&#128247;</a>
-                    </div>
+<div class="footer-socials">
+<a aria-label="Telegram" class="footer-social" href="https://t.me/fluentica_sanobar" target="_blank">✈</a>
+<a aria-label="WhatsApp" class="footer-social" href="https://wa.me/79123456789" target="_blank">💬</a>
+<a aria-label="Instagram" class="footer-social" href="#">📷</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Навигация</h4>
+<div class="footer-links">
+<a class="footer-link" href="#about">О преподавателе</a>
+<a class="footer-link" href="#languages">Языки</a>
+<a class="footer-link" href="#pricing">Стоимость</a>
+<a class="footer-link" href="#testimonials">Отзывы</a>
+<a class="footer-link" href="#faq">Вопросы</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Языки</h4>
+<div class="footer-links">
+<a class="footer-link" href="#languages">Русский язык</a>
+<a class="footer-link" href="#languages">Таджикский язык</a>
+<a class="footer-link" href="#languages">Узбекский язык</a>
+<a class="footer-link" href="#languages">Английский язык</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Контакты</h4>
+<div class="footer-links">
+<a class="footer-link" href="https://t.me/soniabfl1" target="_blank">Telegram</a>
+<a class="footer-link" href="https://wa.me/79123456789" target="_blank">WhatsApp</a>
+<a class="footer-link" href="mailto:fluentica.sanobar@gmail.com">Email</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-copyright">
+                    © 2026 Fluentica. Все права защищены.
                 </div>
 
-                <div>
-                    <h4 class="footer-title">Навигация</h4>
-                    <div class="footer-links">
-                        <a href="#about" class="footer-link">О преподавателе</a>
-                        <a href="#languages" class="footer-link">Языки</a>
-                        <a href="#pricing" class="footer-link">Стоимость</a>
-                        <a href="#testimonials" class="footer-link">Отзывы</a>
-                        <a href="#faq" class="footer-link">Вопросы</a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="footer-title">Языки</h4>
-                    <div class="footer-links">
-                        <a href="#languages" class="footer-link">Русский язык</a>
-                        <a href="#languages" class="footer-link">Таджикский язык</a>
-                        <a href="#languages" class="footer-link">Узбекский язык</a>
-                        <a href="#languages" class="footer-link">Английский язык</a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="footer-title">Контакты</h4>
-                    <div class="footer-links">
-                        <a href="https://t.me/soniabfl1" class="footer-link" target="_blank">Telegram</a>
-                        <a href="https://wa.me/79123456789" class="footer-link" target="_blank">WhatsApp</a>
-                        <a href="mailto:fluentica.sanobar@gmail.com" class="footer-link">Email</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    &copy; 2026 Fluentica. Все права защищены.
-                </div>
-                <div class="footer-legal">
-                    <a href="privacy.html" target="_blank">Политика конфиденциальности</a>
-                    <a href="#">Пользовательское соглашение</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- JAVASCRIPT -->
-    <script>
         // Header scroll
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
